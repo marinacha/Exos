@@ -4,14 +4,6 @@ language: python
 # Set the python version to 3.6
 python: 3.6
 
-# Install the codecov pip dependency
-install:
-  - pip install codecov
-
-# Run the unit test
+#script
 script:
-  - coverage run exo3_test.py
-
-# Push the results back to codecov
-after_success:
-- codecov
+  - python3 exo3_test.py
